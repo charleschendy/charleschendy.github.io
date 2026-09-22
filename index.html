@@ -12,7 +12,7 @@
     --accent: #1f4e79;
     --muted: #5f6670;
     --rule: #e2e5e9;
-    --max-w: 820px;
+    --max-w: 1100px;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -50,7 +50,7 @@
   nav .inner {
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: 14px 24px;
+    padding: 14px 4px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,15 +79,14 @@
 
   /* ── NAME OVER THE SKY ── */
   .cover {
-    min-height: 46vh;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
   }
   .cover .inner {
     width: 100%;
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: 64px 24px;
+    padding: 72px 4px 26px;
     color: #fff;
   }
   .cover h1 {
@@ -112,27 +111,27 @@
     -webkit-backdrop-filter: blur(6px);
     border-radius: 10px;
     box-shadow: 0 10px 40px rgba(10,25,45,.18);
-    padding: 48px 48px 20px;
+    padding: 60px 72px 28px;
   }
 
   /* ── INTRO ── */
   .intro {
     display: flex;
     align-items: flex-start;
-    gap: 40px;
-    padding-bottom: 48px;
+    gap: 56px;
+    padding-bottom: 52px;
   }
   .intro-text { flex: 1; min-width: 0; }
   .avatar {
-    flex: 0 0 180px;
-    width: 180px;
-    height: 240px;
+    flex: 0 0 210px;
+    width: 210px;
+    height: 280px;
     object-fit: cover;
     object-position: center top;
     border-radius: 6px;
     margin-top: 6px;
   }
-  .bio { font-size: .95rem; }
+  .bio { font-size: 1.02rem; }
   .bio + .bio { margin-top: 14px; }
   .bio a {
     color: var(--accent);
@@ -147,7 +146,7 @@
     flex-wrap: wrap;
   }
   .links-row a {
-    font-size: .85rem;
+    font-size: .95rem;
     font-weight: 500;
     color: var(--accent);
     text-decoration: none;
@@ -163,7 +162,7 @@
   section { padding-bottom: 44px; }
   section h2 {
     font-family: 'EB Garamond', serif;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     margin-bottom: 24px;
     padding-top: 16px;
@@ -175,13 +174,13 @@
   .pub:last-child { margin-bottom: 0; }
   .pub .title {
     font-weight: 600;
-    font-size: .95rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 4px;
   }
   .pub .authors,
   .pub .venue {
-    font-size: .85rem;
+    font-size: .92rem;
     color: var(--muted);
   }
   .pub .authors strong { color: var(--ink); font-weight: 600; }
@@ -191,10 +190,10 @@
   .edu-item:last-child { margin-bottom: 0; }
   .edu-item .school {
     font-weight: 600;
-    font-size: .93rem;
+    font-size: 1rem;
   }
   .edu-item .detail {
-    font-size: .85rem;
+    font-size: .92rem;
     color: var(--muted);
   }
 
@@ -208,13 +207,15 @@
   }
 
   /* ── MOBILE ── */
-  @media (max-width: 860px) {
-    .panel { margin: 0 16px 56px; }
+  @media (max-width: 1140px) {
+    .panel { margin: 0 20px 56px; padding: 48px 44px 20px; }
+    nav .inner { padding: 14px 24px; }
+    .cover .inner { padding: 64px 24px 24px; }
   }
   @media (max-width: 600px) {
     nav ul { gap: 16px; }
-    .cover { min-height: 34vh; }
-    .cover .inner { padding: 44px 20px; }
+    nav .inner { padding: 14px 16px; }
+    .cover .inner { padding: 44px 16px 20px; }
     .cover h1 { font-size: 2.3rem; }
     .cover .role { font-size: .9rem; }
     .panel { margin: 0 10px 40px; padding: 28px 20px 8px; }
@@ -344,7 +345,7 @@
 
 <section id="contact">
   <h2>Contact</h2>
-  <p style="font-size:.93rem;">
+  <p style="font-size:1rem;">
     <strong>Email:</strong> deyang.chen@stonybrook.edu<br>
     <strong>Office:</strong> School of Marine and Atmospheric Sciences, the State University of New York at Stony Brook, Stony Brook, NY 11794
   </p>
